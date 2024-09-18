@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.GetInTouch {
+    color: #FFF;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 42px;
+    margin-bottom: 90px;
+    font-weight: 500;
+}
+
+.communication-projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.communication-back {
+    background: url(../../assets/opacity-picture.png);
+    width: 676px;
+    height: 760px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 72px;
+    border-bottom-left-radius: 24px;
+    border-top-left-radius: 24px;
+}
+
+.communication-back .com-title {
+    color: #EEE;
+    font-family: "Roboto", sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    width: 561px;
+}
+
+.communication-back .com-title span {
+    color: #55E5A4;
+    font-family: "Roboto", sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.communication-texts {
+    display: inline-flex;
+    padding: 48px 48px 42px 48px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 760px;
+    /* gap: 110px; */
+    border-radius: 0px 24px 24px 0px;
+    background: #EEE;
+}
+
+.communication-texts .com-text-title {
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+.communication-texts .input-1 {
+    color: #2E0249;
+    width: 526px;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 64px;
+    background: transparent;
+    border-top: unset;
+    border-left: unset;
+    border-right: unset;
+    border-bottom: 2px solid #151C25;
+}
+
+.communication-texts .input-1::placeholder {
+    color: #686565;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.communication-texts .input-2 {
+    color: #2E0249;
+    width: 526px;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 64px;
+    background: transparent;
+    border-top: unset;
+    border-left: unset;
+    border-right: unset;
+    border-bottom: 2px solid #151C25;
+}
+
+.communication-texts .input-2::placeholder {
+    color: #686565;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.communication-texts .input-3 {
+    color: #2E0249;
+    width: 526px;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 64px;
+    background: transparent;
+    border-top: unset;
+    border-left: unset;
+    border-right: unset;
+    border-bottom: 2px solid #151C25;
+}
+
+.communication-texts .input-3::placeholder {
+    color: #686565;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.communication-texts .com-button {
+    display: flex;
+    align-items: center;
+}
+
+.com-button .com-btn {
+    position: relative;
+    cursor: pointer;
+    padding: 24px 64px;
+    background: #55E5A4;
+    color: #151C25;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    border: unset;
+    border-radius: 16px;
+}
+
+.com-button .com-btn a {
+    text-decoration: none;
+    color: #151C25;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.com-button .fa-solid {
+    position: absolute;
+    transform: translateX(30px);
+    font-size: 20px;
+}
+
+.line-3 {
+    border: 1px solid #55E5A4;
+    /* margin-bottom: 100px; */
+    margin-top: 200px;
+}
+
+@media (max-width: 576px) {
+    .communication-back {
+        display: none;
+    }
+
+    .communication-projects {
+        transform: scale(0.8);
+    }
+    .communication-texts {
+        
+        border-bottom-left-radius: 24px;
+        border-top-left-radius: 24px;
+    }
+
+}
+@media (max-width: 480px) {
+    .communication-projects {
+        transform: scale(0.7);
+    }
+}
+@media (max-width: 412px) {
+    .communication-projects {
+        transform: scale(0.6);
+    }
+}
+@media (max-width: 375px) {}
+@media (max-width: 320px) {}

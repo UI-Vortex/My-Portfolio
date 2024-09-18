@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #151C25;
+}
+
+.header {
+    width: 100%;
+    height: 100%;
+}
+
+.header .header_navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 150px;
+    /* gap: 600px; */
+    /* padding: 60px 100px; */
+}
+
+.Selection {
+    display: none;
+}
+
+.header_buttons {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 45px;
+}
+
+.header_buttons .header-smooth {
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    padding: 13px 25px;
+    background: transparent;
+    border: 1px solid rgba(227, 227, 227, 1);
+    font-weight: 500;
+    border-radius: 10px;
+    color: #E3E3E3;
+    transition: 0.5s;
+}
+
+.header_buttons .header-smooth:hover {
+    background: #55E5A4;
+    color: #000;
+}
+
+.header_frontend-flexer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px 100px;
+    flex-wrap: wrap;
+}
+
+
+.header_frontend .frontend-name {
+    font-family: "Roboto", sans-serif;
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.header_frontend .frontend-title {
+    color: #55E5A4;
+    font-family: "Roboto", sans-serif;
+    font-size: 42px;
+    font-weight: 900;
+    margin-bottom: 7px;
+}
+
+.header_frontend .frontend_aboutMyself {
+    width: 594px;
+    color: #A9A9A9;
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.header_frontend .frontend_GetInTouch {
+    padding: 10px 11.5px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    background: transparent;
+    border: 1px solid rgba(227, 227, 227, 1);
+    border-radius: 10px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.header_frontend .frontend_GetInTouch:hover {
+    color: #000;
+    background: #55E5A4;
+}
+
+
+/* mobile < 576  */
+@media (max-width: 667px) {
+    .header_frontend .frontend-name {
+        font-family: "Roboto", sans-serif;
+        color: #FFF;
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    .header_frontend .frontend-title {
+        color: #55E5A4;
+        font-family: "Roboto", sans-serif;
+        font-size: 24px;
+        font-weight: 900;
+        margin-bottom: 7px;
+    }
+
+    .header_frontend .frontend_aboutMyself {
+        width: 100%;
+        width: 400px;
+        color: #A9A9A9;
+        font-family: "Roboto", sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 40px;
+    }
+
+    .header_frontend .frontend_GetInTouch {
+        padding: 10px;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+        font-family: "Roboto", sans-serif;
+        background: transparent;
+        border: 1px solid rgba(227, 227, 227, 1);
+        border-radius: 10px;
+        transition: .5s;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 576px) {
+    .header_frontend-images img {
+        width: 350px;
+        margin-bottom: -100px;
+    }
+
+    .Selection {
+        display: block;
+        padding: 20px;
+        border-radius: 15px;
+
+        color: #fff;
+        font-size: 15px;
+        font-weight: 500;
+        font-family: "Roboto", sans-serif;
+        background: transparent;
+        border: 1px solid rgba(227, 227, 227, 1);
+        transition: .5s;
+        cursor: pointer;
+    }
+
+    .Selection option {
+        background: black;
+        border: transparent;
+        color: white;
+    }
+
+    .header_buttons {
+        display: none;
+    }
+
+    .header_navbar a {
+        margin-right: 140px;
+        margin-left: -130px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header_frontend .frontend-name {
+        font-family: "Roboto", sans-serif;
+        color: #FFF;
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        transform: translateX(10px);
+    }
+
+    .header_frontend .frontend-title {
+        color: #55E5A4;
+        font-family: "Roboto", sans-serif;
+        font-size: 24px;
+        font-weight: 900;
+        transform: translateX(10px);
+        margin-bottom: 7px;
+    }
+
+    .header_frontend .frontend_aboutMyself {
+        width: 100%;
+        width: 340px;
+        color: #A9A9A9;
+        font-family: "Roboto", sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 40px;
+        transform: translateX(10px);
+    }
+
+    .header_frontend .frontend_GetInTouch {
+        padding: 10px;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+        font-family: "Roboto", sans-serif;
+        background: transparent;
+        border: 1px solid rgba(227, 227, 227, 1);
+        border-radius: 10px;
+        transition: .5s;
+        cursor: pointer;
+        transform: translateX(10px);
+    }
+}
+
+@media (max-width: 412px) {}
+
+@media (max-width: 375px) {}
+
+@media (max-width: 320px) {}
